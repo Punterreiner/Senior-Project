@@ -9,3 +9,9 @@ from django.urls import reverse
 
 def index(request):
     return render(request, 'EACalculator/index.html')
+
+def results(request):
+    return render(request, 'EACalculator/results.html')
+
+def feedback(request):
+    return render(request, 'EACalculator/feedback.html')
