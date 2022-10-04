@@ -5,6 +5,6 @@ app_name = 'polls'
 
 urlpatterns = [
     path('', views.index, name='index'),
-    path('feedback', views.feedback, name='index'),
-    path('results', views.results, name='index'),
+    path('feedback', views.feedback, name='feedback'),
+    path('results', views.results, name='results'),
 ]
