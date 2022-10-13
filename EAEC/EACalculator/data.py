@@ -3,7 +3,7 @@ data = (actions, charities)
 actions = {1:('Think green', 'Pack a water bottle', 'Use public transport','Take local trips',
 'Switch off computers', 'Raise awareness', 'Reduce, reuse, recycle', 'Cycle to work',
 'Turn off the lights','Use less water'),2:('Change your diet','Go digital',
-'Eliminate single-use plastic','Compost',), 3:('Insulate your home', 'Switch to renewables', 
+'Eliminate single-use plastic','Compost','Invest Ethically'), 3:('Insulate your home', 'Switch to renewables', 
 'Buy energy efficient', 'Use local food','Fly direct'), 4:('Offset your carbon')}
 
 action_description = {'Think green': 'No matter how far you travel, you can take an environmentally friendly approach when you reach your destination. As well as choosing green accommodation and ethical destinations, you can also think about the tours and attractions you take. Try and walk, cycle, or use public transport, eat local food, and leave as light a carbon footprint as possible.',
@@ -25,7 +25,8 @@ action_description = {'Think green': 'No matter how far you travel, you can take
 'Buy energy efficient':'Electrical appliances are becoming more efficient by the year. What`s more, many countries now show how efficient particular products are, meaning you can make an informed choice. Whether it`s buying energy-saving light bulbs or choosing appliances with a high energy star rating, you can make your home more eco-friendly. Additionally, make sure to turn off and unplug anything you`re not using.',
 'Use local food':'This is a tip that can apply to just about every area of life. Locally-grown produce takes less energy to transport and supports the economy where you live. If you can get your school to switch to local and sustainable food for the kitchen, you can help save the planet and help local businesses.',
 'Fly direct':'The carbon footprint of flying is larger than any other mode of transport. While the Eurostar, for example, emits around 6g of CO2 per kilometre travelled, a domestic flight produces 133g of CO2 and 121g of other emissions.  When you do fly, you should aim to reduce the number of stops on your route, ideally by flying directly to your destination.',
-'Offset your carbon':'Many airlines and travel companies now offer you the chance to offset your carbon emissions. Essentially, this is where you pay money on top of the cost of your ticket to fund projects aimed at reducing your carbon footprint. These carbon offsets cover all kinds of incentives, such as restoring forests and making energy and transportation more efficient.'
+'Offset your carbon':'Many airlines and travel companies now offer you the chance to offset your carbon emissions. Essentially, this is where you pay money on top of the cost of your ticket to fund projects aimed at reducing your carbon footprint. These carbon offsets cover all kinds of incentives, such as restoring forests and making energy and transportation more efficient.',
+'Invest Ethically':'Banks, pensions funds and big corporates often hold investments in fossil fuel companies. Make sure to check what your money is going to when you choose to invest it.'
 }
 
 charities = {GREAT:('Cool Earth','Union of Concerned Scientists','Earth Justice', 'Earth Island'), 
