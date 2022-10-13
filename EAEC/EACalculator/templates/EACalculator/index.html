@@ -17,6 +17,24 @@
         used to creagte a personalized list of things you can do to 
         to help the environment, given your specific circumstances.
     </p>
-    <a href="http://127.0.0.1:8000/EACalculator/results"><div class="button">Results</div></a>
+    <form action="" method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <!--<label for="age">Age: </label>
+        <input id="age" type="text" name="age" value="{{ current_age }}"><br>
+        <label for="spare_money">Spare Money: </label>
+        <input id="spare_money" type="text" name="spare_money" value="{{ spare_money }}"><br>
+        <label for="free_time">Free Time(in hours a week): </label>
+        <input id="free_time" type="text" name="free_time" value="{{ free_time }}"><br>
+        <label for="fitness">Fitness level:</label>
+        <select id="fitness" name="fitness">
+            <option value="poor">poor</option>
+            <option value="ok">ok</option>
+            <option value="good">good</option>
+            <option value="excellent">excellent</option>
+        </select><br>-->
+        <input type="submit" value="Results">
+    </form>
+    <!--<a href="http://127.0.0.1:8000/EACalculator/results"><div class="button">Results</div></a>-->
     </div>
 {% endblock %}
