@@ -15,3 +15,4 @@ class Fields(forms.Form):
     free_time = forms.CharField(max_length=50)
     fitness = forms.ChoiceField(choices=levels)
     near_water = forms.ChoiceField(choices=yes_no)
+    contribution_level = forms.ChoiceField(choices = levels)
