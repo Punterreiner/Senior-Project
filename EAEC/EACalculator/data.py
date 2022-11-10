@@ -1,10 +1,9 @@
-data = (actions, charities)
 
-actions = {1:('Think green', 'Pack a water bottle', 'Use public transport','Take local trips',
+actions = {0:('Think green', 'Pack a water bottle', 'Use public transport','Take local trips',
 'Switch off computers', 'Raise awareness', 'Reduce, reuse, recycle', 'Cycle to work',
-'Turn off the lights','Use less water'),2:('Change your diet','Go digital',
-'Eliminate single-use plastic','Compost','Invest Ethically'), 3:('Insulate your home', 'Switch to renewables', 
-'Buy energy efficient', 'Use local food','Fly direct'), 4:('Offset your carbon')}
+'Turn off the lights','Use less water'),1:('Change your diet','Go digital',
+'Eliminate single-use plastic','Compost','Invest Ethically'), 2:('Insulate your home', 'Switch to renewables', 
+'Buy energy efficient', 'Use local food','Fly direct'), 3:('Offset your carbon')}
 
 action_description = {'Think green': 'No matter how far you travel, you can take an environmentally friendly approach when you reach your destination. As well as choosing green accommodation and ethical destinations, you can also think about the tours and attractions you take. Try and walk, cycle, or use public transport, eat local food, and leave as light a carbon footprint as possible.',
 'Pack a water bottle':'Although you often can`t take liquids in your carry-on luggage, you can pack a water bottle on anything you`re checking-in. Having a reusable container for your water means you can cut down on one-use plastic bottles. This can cut your carbon footprint for the manufacture and transport of each bottle. ',
@@ -29,8 +28,8 @@ action_description = {'Think green': 'No matter how far you travel, you can take
 'Invest Ethically':'Banks, pensions funds and big corporates often hold investments in fossil fuel companies. Make sure to check what your money is going to when you choose to invest it.'
 }
 
-charities = {GREAT:('Cool Earth','Union of Concerned Scientists','Earth Justice', 'Earth Island'), 
-MONEY:('Clean Air Task Force','Carbon180'), CHEAP:('Greenpeace','Earth Justice',
+charities = {0:('Cool Earth','Union of Concerned Scientists','Earth Justice', 'Earth Island'), 
+2:('Clean Air Task Force','Carbon180'), 1:('Greenpeace','Earth Justice',
 'Practical Action')}
 
 charity_description = {'Cool Earth':'Fights to protect the earths rainforests, and help indigenous communities create sustainibility programs. You can donate to them directly or make purchases from their online shop to donate.',
@@ -39,8 +38,10 @@ charity_description = {'Cool Earth':'Fights to protect the earths rainforests, a
 'Carbon180':'A charity that`s mostly focuses specifically on the research of carbon capture technologies, can be donated to directly through the website',
 'Greenpeace':'Primarily investigates and exposes the main causes of damage to the environment, and has spent a considerable amount of time and energy in specifically protecting the artic ocean. They can be donated to through their website, but they also have ways to set up a fundraising event to donate and have petitions.',
 'Earth Justice':'A group of lawyers dedicated to protecting the planet by handing out lawsuits and helping to pass laws that make the world more evironmentally freindly. They can be donated to through their website, additionally they offer many petitions to sign that help strengthen their cases.',
-'Practical action': 'Works to help improve the livlihood of those in poorer communities by helping them start sustainability programs that are good for the community and the environment. They can be donated to throught their website, through the purchase of their wishlist items, or they offer you an option to set up a fundraiser.',
+'Practical Action': 'Works to help improve the livlihood of those in poorer communities by helping them start sustainability programs that are good for the community and the environment. They can be donated to throught their website, through the purchase of their wishlist items, or they offer you an option to set up a fundraiser.',
 'Earth Island':'Offers support to start-up evironmental projects that serve to protect wildlife and fight climate change. In addition they serve to promote young leaders that want to make a change in the world. They can be donated to through their website, or if you have a well worked out environmental project proposal, they allow you apply for support from them.',
 }
 
 water = 'If you`re near a body of water see if there are any clean up organizations near you. Most water sources have become polluted and many cities have local programs that go out and clean trash out of the water. Additionally if you`re near a beach there`s bound to be a beach clean up program aswell' 
+
+data = (actions, charities)

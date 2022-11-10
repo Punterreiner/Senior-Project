@@ -3,8 +3,20 @@
 {% block title %}EAEC Results{% endblock %}
 
 {% block content %}
-<div class="myDiv">
+<div class="myDiv" style="overflow-y:auto;">
 <h1 style="text-align: center">Recommendations</h1>
-<p>Age: {{ age }}, Spare Money: {{ spare_money }}, Free Time: {{ free_time }}, Fitness: {{ fitness }}, Near Water: {{ near_water }}, Contribution Level: {{ contribution_level }}</p>
+<p>Age: {{ age }}, Spare Money: {{ spare_money }}, Free Time: {{ free_time }}, 
+    Fitness: {{ fitness }}, Near Water: {{ near_water }}, 
+    Contribution Level: {{ contribution_level }}, Profile: {{ profile }}</p>
+    <table>
+        <!--<tr><th>Action/Charity</th><th>Description</th></tr>-->
+        {% for key,value in table.items %}
+            <tr><th>{{key}}</th></tr>
+            <tr><td>{{value}}</td></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+        {% endfor %}
+    </table>
 </div>
 {% endblock %}
