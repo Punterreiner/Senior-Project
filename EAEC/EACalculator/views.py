@@ -19,12 +19,12 @@ def index(request):
             free_time = form.cleaned_data['free_Time']
             fitness = form.cleaned_data['fitness']
             near_water = form.cleaned_data['near_Water']
-            contribution_level = form.cleaned_data['contribution_Level']
-            selector = Selector(age, spare_money, free_time, fitness, near_water, contribution_level)
+            #contribution_level = form.cleaned_data['contribution_Level']
+            selector = Selector(age, spare_money, free_time, fitness, near_water)
             profile = selector.profileSelector(age, spare_money, free_time, fitness)
             datepicker = dataPicker(profile, near_water)
             table = datepicker.getTable(profile, near_water)
-            dict = {'age':age, 'spare_money': spare_money,'free_time':free_time,'fitness': fitness,'near_water':near_water, 'contribution_level':contribution_level, 'profile': profile, 'table': table}
+            dict = {'age':age, 'spare_money': spare_money,'free_time':free_time,'fitness': fitness,'near_water':near_water, 'profile': profile, 'table': table}
             return render(request, 'EACalculator/results.html', dict)
             
     else:

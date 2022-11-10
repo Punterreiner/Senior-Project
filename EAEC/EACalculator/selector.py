@@ -9,13 +9,12 @@ class Selector(object):
     def __new__(cls, *args, **kwargs):
         return super().__new__(cls)
 
-    def __init__(self, age, spare_money, free_time, fitness, near_water, contribution_level):
+    def __init__(self, age, spare_money, free_time, fitness, near_water):
         self.age = age
         self.spare_money = spare_money
         self.free_time = free_time
         self.fitness = fitness
         self.near_water = near_water
-        self.contribution_level = contribution_level
         
     def profileSelector(self, age, spare_money, free_time, fitness):
         points = Selector.agePoints(int(age)) + Selector.moneyPoints(int(spare_money)) + Selector.ftPoints(int(free_time)) + Selector.fPoints(fitness)
