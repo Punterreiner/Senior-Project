@@ -7,5 +7,5 @@ urlpatterns = [
     path('', views.index, name='index'),
     path('feedback', views.feedback, name='feedback'),
     path('results', views.results, name='results'),
-    path('table', views.table, name='table'),
+    
 ]

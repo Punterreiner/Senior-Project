@@ -9,7 +9,6 @@
     Fitness: {{ fitness }}, Near Water: {{ near_water }}, 
     </p>
     <table>
-        <!--<tr><th>Action/Charity</th><th>Description</th></tr>-->
         {% for key,value in table.items %}
             <tr><th>{{key}}</th></tr>
             <tr><td>{{value}}</td></tr>
@@ -18,5 +17,14 @@
             <tr></tr>
         {% endfor %}
     </table>
+    Charities and Actions are from 
+    <br>
+    https://impactful.ninja/best-charities-for-climate-change/
+    <br>
+    https://www.futurelearn.com/info/blog/how-to-reduce-your-carbon-footprint-tips
+    <br>
+    <a href="http://127.0.0.1:8000/EACalculator/feedback">
+        <button class="button">Feedback</button>
+    </a>
 </div>
 {% endblock %}
