@@ -6,7 +6,7 @@
 
 
 {% block content %}
-    <div class="myDiv">
+    <div class="myDiv" style="overflow-y:scroll;">
     <h1 style="text-align: center">Effectively Altruistic Environmental Calculator</h1>
     <p style="text-align: center; margin: 0px 20px 0px 20px">
         Hello! Welcome to my effectively altruistic environmental 
@@ -19,10 +19,9 @@
     </p>
     <form action="" method="post">
         {% csrf_token %}
-        {{ form.as_p }}  
+        {{ form.as_p }}
         <input type="submit" value="Results">
     </form>
-    <!--<a href="http://127.0.0.1:8000/EACalculator/results"><div class="button">Results</div></a>-->
     <a href="http://127.0.0.1:8000/EACalculator/feedback">
         <button class="button">Feedback</button>
     </a>

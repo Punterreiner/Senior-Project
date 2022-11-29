@@ -1,4 +1,5 @@
 from django import forms
+from .models import Feedback 
 
 levels = (
     ('poor','POOR'),
@@ -16,3 +17,8 @@ class Fields(forms.Form):
     fitness = forms.ChoiceField(choices=levels)
     near_Water = forms.ChoiceField(choices=yes_no)
     #contribution_Level = forms.ChoiceField(choices = levels)
+
+class FeedbackForm(forms.ModelForm):
+    class Meta:
+        model = Feedback
+        exclude = []

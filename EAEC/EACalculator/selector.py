@@ -4,8 +4,6 @@ from .data import data, actions, action_description, charities, charity_descript
 
 class Selector(object):
 
-    profiles = ['kid', 'college', 'avg_adult', 'wealthy']
-
     def __new__(cls, *args, **kwargs):
         return super().__new__(cls)
 

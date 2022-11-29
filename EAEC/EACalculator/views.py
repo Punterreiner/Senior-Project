@@ -5,9 +5,8 @@ from django.http import Http404
 from django.shortcuts import get_object_or_404, render
 from django.urls import reverse
 from .selector import Selector, dataPicker
-import pandas as pd
 
-from .forms import Fields
+from .forms import Fields, FeedbackForm
 # Create your views here.
 
 def index(request):
@@ -36,7 +35,12 @@ def results(request):
     return render(request, 'EACalculator/results.html')
 
 def feedback(request):
-    return render(request, 'EACalculator/feedback.html')
+    if request.method == 'POST':
+        form = FeedbackForm(request.POST)
 
-def table(request):
-    return render(request, 'EACalculator/table.html')
+        if form.is_valid():
+            form.save()
+            return render(request, 'EACalculator/feedback.html')
+    else:
+        form = FeedbackForm()
+    return render(request, 'EACalculator/feedback.html', {'form': form})
