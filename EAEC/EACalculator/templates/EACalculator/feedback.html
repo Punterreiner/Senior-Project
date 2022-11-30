@@ -5,6 +5,7 @@
 {% block content %}
 <div class="myDiv" style="overflow-y:auto;">
     <h1 style="text-align: center">Feedback</h1>
+<p style = "text-align: center">Please enter any suggestions you have here</p>
 <form action="" method="POST">
     {% csrf_token %}
     {{ form.as_p }}
