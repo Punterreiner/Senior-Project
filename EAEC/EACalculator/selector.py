@@ -15,7 +15,8 @@ class Selector(object):
         self.near_water = near_water
         
     def profileSelector(self, age, spare_money, free_time, fitness):
-        points = Selector.agePoints(int(age)) + Selector.moneyPoints(int(spare_money)) + Selector.ftPoints(int(free_time)) + Selector.fPoints(fitness)
+        points = Selector.agePoints(age) + Selector.moneyPoints(int(spare_money)) + Selector.ftPoints(int(free_time)) + Selector.fPoints(fitness)
+        mp = Selector.moneyPoints(int(spare_money))
         if points <= 6:
             profile = 0
         elif points <= 11:
@@ -24,15 +25,15 @@ class Selector(object):
             profile = 2
         elif points <= 22:
             profile = 3
-        return profile
+        return (profile, mp/2)
 
     def agePoints(age):
         ap = 0
-        if age <= 18:
+        if age == 'U18':
             ap = 1
-        elif (age > 18 & age < 26) or (age > 45):
+        elif age == 'college' or age == 'retired':
             ap = 2
-        elif age > 26 & age < 45:
+        elif age == 'working':
             ap = 3 
         return ap
 
@@ -83,7 +84,7 @@ class dataPicker(object):
     def __new__(cls, *args, **kwargs):
         return super().__new__(cls)
 
-    def __init__(self, profile, near_water):
+    def __init__(self, profile, mp, near_water):
         self.profile = profile
         self.near_water = near_water
     
@@ -97,13 +98,14 @@ class dataPicker(object):
             actselections.update({'Water Cleanup': water})
         return actselections
 
-    def selectCharities(profile):
+    def selectCharities(mp):
         charselections = {}
-        for i in range(profile + 1):
+        for i in range(int(mp)):
             chars = charities.get(i)
-            for char in chars:    
-                desc = charity_description.get(char)
-                charselections.update({char:desc})
+            if chars != None: 
+                for char in chars:    
+                    desc = charity_description.get(char)
+                    charselections.update({char:desc})
             chars = tuple()
         return charselections
     
@@ -111,8 +113,8 @@ class dataPicker(object):
         res = {**dict1, **dict2}
         return res
 
-    def getTable(self, profile, near_water):
+    def getTable(self, profile, mp, near_water):
         AS = dataPicker.selectActions(profile, near_water)
-        CS = dataPicker.selectCharities(profile)
+        CS = dataPicker.selectCharities(mp)
         table = dataPicker.Merge(AS, CS)
         return table

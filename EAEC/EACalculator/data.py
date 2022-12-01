@@ -1,8 +1,8 @@
 
 actions = {0:('Think green', 'Pack a water bottle', 'Use public transport','Take local trips',
 'Switch off computers', 'Raise awareness', 'Reduce, reuse, recycle', 'Cycle to work',
-'Turn off the lights','Use less water'),1:('Change your diet','Go digital',
-'Eliminate single-use plastic','Compost','Invest Ethically'), 2:('Insulate your home', 'Switch to renewables', 
+'Turn off the lights','Use less water','Ucycle More', 'Shop Secondhand'),1:('Change your diet','Go digital',
+'Eliminate single-use plastic','Compost','Invest Ethically', 'Ucycle More'), 2:('Insulate your home', 'Switch to renewables', 
 'Buy energy efficient', 'Use local food','Fly direct'), 3:('Offset your carbon')}
 
 action_description = {'Think green': 'No matter how far you travel, you can take an environmentally friendly approach when you reach your destination. As well as choosing green accommodation and ethical destinations, you can also think about the tours and attractions you take. Try and walk, cycle, or use public transport, eat local food, and leave as light a carbon footprint as possible.',
@@ -25,11 +25,13 @@ action_description = {'Think green': 'No matter how far you travel, you can take
 'Use local food':'This is a tip that can apply to just about every area of life. Locally-grown produce takes less energy to transport and supports the economy where you live. If you can get your school to switch to local and sustainable food for the kitchen, you can help save the planet and help local businesses.',
 'Fly direct':'The carbon footprint of flying is larger than any other mode of transport. While the Eurostar, for example, emits around 6g of CO2 per kilometre travelled, a domestic flight produces 133g of CO2 and 121g of other emissions.  When you do fly, you should aim to reduce the number of stops on your route, ideally by flying directly to your destination.',
 'Offset your carbon':'Many airlines and travel companies now offer you the chance to offset your carbon emissions. Essentially, this is where you pay money on top of the cost of your ticket to fund projects aimed at reducing your carbon footprint. These carbon offsets cover all kinds of incentives, such as restoring forests and making energy and transportation more efficient.',
-'Invest Ethically':'Banks, pensions funds and big corporates often hold investments in fossil fuel companies. Make sure to check what your money is going to when you choose to invest it.'
+'Invest Ethically':'Banks, pensions funds and big corporates often hold investments in fossil fuel companies. Make sure to check what your money is going to when you choose to invest it.',
+'Ucycle More':'Get creative with your useless or unwanted items by upcycling—basically, turning trash into treasure. Creating something new such as artwork, toys or jewelry is both satisfying and one of the best ways to protect the environment. Not only does it keep items out of the trash, it can prevent having to purchase new items, which require lots of resources to produce.',
+'Shop Secondhand':'Did you know it takes over 700 gallons of water to grow enough cotton to make just one plain t-shirt? Instead of heading to the mall to buy new clothes, consider looking first in a thrift store or vintage shop, or trading clothes with friends. You can breathe new life into your wardrobe without wasting the precious resources needed to produce new clothing.',
 }
 
-charities = {0:('Cool Earth','Union of Concerned Scientists','Earth Justice', 'Earth Island'), 
-2:('Clean Air Task Force','Carbon180'), 1:('Greenpeace','Earth Justice',
+charities = {0:('League of Conservation Voters Education Fund', 'Earth Justice'), 1:('Cool Earth','Union of Concerned Scientists', 'Earth Island'), 
+3:('Clean Air Task Force','Carbon180'), 2:('Greenpeace','Earth Justice',
 'Practical Action')}
 
 charity_description = {'Cool Earth':'Fights to protect the earths rainforests, and help indigenous communities create sustainibility programs. You can donate to them directly or make purchases from their online shop to donate.',
@@ -40,6 +42,7 @@ charity_description = {'Cool Earth':'Fights to protect the earths rainforests, a
 'Earth Justice':'A group of lawyers dedicated to protecting the planet by handing out lawsuits and helping to pass laws that make the world more evironmentally freindly. They can be donated to through their website, additionally they offer many petitions to sign that help strengthen their cases.',
 'Practical Action': 'Works to help improve the livlihood of those in poorer communities by helping them start sustainability programs that are good for the community and the environment. They can be donated to throught their website, through the purchase of their wishlist items, or they offer you an option to set up a fundraiser.',
 'Earth Island':'Offers support to start-up evironmental projects that serve to protect wildlife and fight climate change. In addition they serve to promote young leaders that want to make a change in the world. They can be donated to through their website, or if you have a well worked out environmental project proposal, they allow you apply for support from them.',
+'League of Conservation Voters Education Fund':'This group`s mission is to inform and engage voters about key environmental issues at election time and to advocate for sound environmental policies all year long. It says its mission is to ``turn environmental values into national, state and local priorities.``',
 }
 
 water = 'If you`re near a body of water see if there are any clean up organizations near you. Most water sources have become polluted and many cities have local programs that go out and clean trash out of the water. Additionally if you`re near a beach there`s bound to be a beach clean up program aswell' 
